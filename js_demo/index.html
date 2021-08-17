@@ -34,13 +34,11 @@
             <p><b>What is 5 + 6?</b></p>
             <button type="button" onclick="document.getElementById('add').innerHTML = 5 + 6">Click to find out</button>
             <p id="add"></p>
-            
 
             <p style="font-size: 40px;"> How do we multiply</p>
             <p><b>What is 100 * 101?</b></p>
             <button type="button" onclick="document.getElementById('mult').innerHTML = 100 * 101">Click to find out</button>
             <p id="mult"></p>
-            <hr>
 
             <h2>How do we change text?</h2>
             <p><b>We change <i>HTML</i> with <i>JS</i></b></p>
@@ -58,6 +56,45 @@
             <p><b>Lets usa a function to add text.</b></p>
             <button type="button" onclick="myFunction()">Click me to run function</button>
             <p id="my-function"></p>
+            
+            <hr>
+
+            <a href="https://www.w3schools.com" onclick="alert ('youAreLeavingMysite')" target="_blank">This is a link to w3 schools</a>
+            
+            <hr>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6> 
+            
+            <hr>
+            
+        <h1 style="font-size: 50px;color: rebeccapurple; margin-right: 1000px;">Heading</h1> 
+        
+        <hr>
+
+        <h1 style="color: lightpink; font-size: 75px;"><b>This is a Test were i will add new things</b></h2>
+
+            <p style="font-size: 25px; color: navy;">In this paragraph i will put a colored link, along with a button that will solve 10 * 10, and i will see if i can put a function;</p>
+            <ul>
+                <li style="color: violet;"><a style="color: violet;" href="https://www.w3schools.com" onclick="alert ('youAreLeavingMysite')" target="_blank">This is a link to w3 schools</a></li>
+
+
+                <li style="color: violet;">What is 10 * 10?</li>
+                <button type="button" onclick="document.getElementById('mult together').innerHTML = 10 * 10">Click here to get answer</button>
+                <p style="color: violet;" id="mult together"></p>
+
+
+                <li style="color: violet;">I am now goign to use a function to add txt i know i already did this but i am doing it again for fun</li>
+                <li style="color: violet;"><button type="button" onclick="myFunctionPart2()">Click me to run function</button>
+                    <p id="myFunctionPart2"></p></li>
+            </ul>
+
+            <hr>
+
 
         </div>
     </div>
@@ -68,6 +105,12 @@
         function myFunction() {
             document.getElementById('my-function').innerHTML = 'You jsut ran a function!';
         }
+
+        function myFunctionPart2() {
+            document.getElementById('myFunctionPart2').innerHTML = 'Good job you ran a function';
+        }
+
     </script>
+
 </body>
 </html>
