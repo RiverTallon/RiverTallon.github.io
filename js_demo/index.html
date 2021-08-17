@@ -27,11 +27,47 @@
             <h2>How do we do onclick events?</h2>
             <p><a href="http://google.com" onclick="alert('You are navigationgaway from my site')" target="_blank"> Search google.</a></p>
             <p>Click <a href="http://lwsd.org" onclick="alert('have fun')" target="blank">HERE</a> to visit my schools website. </p>
+
+            <hr>
+
+            <h2>How do ww do math</h2>
+            <p><b>What is 5 + 6?</b></p>
+            <button type="button" onclick="document.getElementById('add').innerHTML = 5 + 6">Click to find out</button>
+            <p id="add"></p>
+            
+
+            <p style="font-size: 40px;"> How do we multiply</p>
+            <p><b>What is 100 * 101?</b></p>
+            <button type="button" onclick="document.getElementById('mult').innerHTML = 100 * 101">Click to find out</button>
+            <p id="mult"></p>
+            <hr>
+
+            <h2>How do we change text?</h2>
+            <p><b>We change <i>HTML</i> with <i>JS</i></b></p>
+
+            <p>What is your favorite food</p>
+            <button type="button" onclick="document.getElementById('change-text').innerHTML = 'Mine is tacos' ">Click to find out</button>
+            <p id="change-text">This is text</p>
+            <p><b>We can also add the <u>Date</u>and <u>time</u></b></p>
+            <button type="button" onclick="document.getElementById('date').innerHTML = Date()"> What is the date?</button>
+            <p id="date"></p>
+
+            <hr>
+
+            <h2>How do we run a function?</h2>
+            <p><b>Lets usa a function to add text.</b></p>
+            <button type="button" onclick="myFunction()">Click me to run function</button>
+            <p id="my-function"></p>
+
         </div>
     </div>
 
     <script>
         // alert('Hello, World\nWelcome to my Site');
+
+        function myFunction() {
+            document.getElementById('my-function').innerHTML = 'You jsut ran a function!';
+        }
     </script>
 </body>
 </html>
